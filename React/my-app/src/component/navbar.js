@@ -1,34 +1,65 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
 import "./navbar.css";
+import { Turn as Hamburger } from 'hamburger-react'
+import styled from 'styled-components'
+import { useState } from "react";
 
-const toggleMenu = ({ isOpen }) => {
-  const menuWrap = document.querySelector(".bm-menu-wrap");
-  isOpen
-    ? menuWrap.setAttribute("aria-hidden", false)
-    : menuWrap.setAttribute("aria-hidden", true);
-};
+const BurgerOpen = styled.div`
+    position: absolute;
+    top: 0;
+    right: -40vw;
+    z-index: 1;
+    height: 100vh;
+    width: 40vw;
+    background: #E8C7DF;
+    display: grid;
+    grid-template-rows: 20vh 40vh;
+  `;
 
 const Navbar = () => {
+  const [open, setOpenBurger] = useState(false);
+
+  const changeBurger = () => {
+    if (open) {
+      closeBurger()
+    }
+    else {
+      openBurger()
+    }
+  };
+
+  const openBurger = () => {
+    setOpenBurger(true);
+  };
+
+  const closeBurger = () => {
+    setOpenBurger(false);
+  }
+
   return (
     <div className="navbar">
       <div className="Title">
         <h2>AR Clothing</h2>
       </div>
-      <div className="burger">
-        <Menu noOverlay onStateChange={toggleMenu}>
-          <a className="menu-item" href="/">
-            Mon compte
-          </a>
-          <a className="menu-item" href="/">
-            Mes favoris
-          </a>
-          <a className="menu-item" href="/">
-            Ma taille
-          </a>
-        </Menu>
+      <div className="burger-container">
+        <div className="open-burger">
+          <button value="" onClick={changeBurger}><Hamburger className="burger-logo" /></button>
+        </div>
+        <BurgerOpen className={open ? 'slide-in' : 'slide-out'}>
+          <ul>
+            <li><a className="menu-item" href="/">
+              Mon compte
+            </a></li>
+            <li><a className="menu-item" href="/">
+              Mes favoris
+            </a></li>
+            <li><a className="menu-item" href="/">
+              Ma Taille
+            </a></li>
+          </ul>
+        </BurgerOpen>
       </div>
-    </div>
+    </div >
   );
 };
 
