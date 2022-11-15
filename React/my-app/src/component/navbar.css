@@ -1,0 +1,52 @@
+/* ------------ Navbar ---------------*/
+.navbar {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #C68DD0;
+}
+
+/* ------------ Burger ---------------*/
+.bm-burger-button {
+    position: relative;
+    width: 36px;
+    height: 30px;
+}
+
+.bm-burger-bars {
+    background: #000;
+}
+
+.bm-menu-wrap {
+  visibility: hidden;
+}
+
+/* .bm-menu-wrap.open {
+  visibility: visible;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+} */
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+.bm-item-list {
+    padding: 0.8em;
+}
+
+.bm-item {
+    display: block;
+    color: #bdc3c7;
+}

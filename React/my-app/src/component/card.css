@@ -1,0 +1,32 @@
+.card {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25vw;
+    aspect-ratio: 1/1;
+    margin-left: 5vw;
+    background: grey;
+    white-space: normal;
+    border-radius: 10%;
+}
+
+.card:last-child {
+    margin-right: 5vw;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-content input[type="button"] {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    opacity: 0;;
+}
