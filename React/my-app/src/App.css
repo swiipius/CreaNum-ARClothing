@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   position: relative;
   overflow: hidden;
@@ -40,22 +46,19 @@
 
 .AR-button-container {
   position: absolute;
-  width: 50px;
+  width: 100px;
   aspect-ratio: 1/1;
   border-radius: 100%;
   background: #C57D73;
-  background-image: url("image/arkit.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
   bottom: 10px;
   right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.AR-button-container input[type=button] {
-  width: 50px;
+.arkit-logo {
+  width: 80%;
   aspect-ratio: 1/1;
   border-radius: 100%;
-  transform: translateY(2px);
-  opacity: 0;
 }

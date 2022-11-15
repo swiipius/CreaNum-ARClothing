@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import { Turn as Hamburger } from 'hamburger-react'
+import { Spin as Hamburger } from 'hamburger-react'
 import styled from 'styled-components'
 import { useState } from "react";
 
@@ -43,7 +43,7 @@ const Navbar = () => {
       </div>
       <div className="burger-container">
         <div className="open-burger">
-          <button value="" onClick={changeBurger}><Hamburger className="burger-logo" /></button>
+          <button value="" onClick={changeBurger}><Hamburger duration={0.8} easing="ease-in" rounded className="burger-logo" /></button>
         </div>
         <BurgerOpen className={open ? 'slide-in' : 'slide-out'}>
           <ul>
