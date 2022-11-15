@@ -1,22 +1,20 @@
-import React from "react";
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+import React from 'react';
+import Popup from ".//popup";
+import { useState } from 'react';
 import "./card.css";
 
-const Card = (props) => {
-
-    function openCard() {
-        <Popup trigger={<button> Trigger</button>} position="right center">
-            <div>Popup content here !!</div>
-        </Popup>
-    }
+function Card(props) {
+    const [buttonPopup, setButtonpopup] = useState(false);
 
     return (
         <div className="card">
             {/* A faire pour changer image via argument dans le code App */}
             {/* <div className="card-content" style={{ backgroundImage: 'url(' + require('../image/arkit.png') + ')' }}> */}
             <div className="card-content">
-                <input type="button" value="" onClick={openCard} />
+                <button value="" onClick={() => setButtonpopup(true)}>{props.name}</button>
+                <Popup trigger={buttonPopup} setTrigger={setButtonpopup}>
+                    <h3>Hello nite</h3>
+                </Popup>
             </div>
         </div >
     );
