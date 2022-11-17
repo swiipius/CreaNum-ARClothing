@@ -50,7 +50,7 @@ const Navbar = () => {
             <li><a className="menu-item" href="/">
               Mon compte
             </a></li>
-            <li><a className="menu-item" href="/">
+            <li><a className="menu-item" href="../favoris.js">
               Mes favoris
             </a></li>
             <li><a className="menu-item" href="/">

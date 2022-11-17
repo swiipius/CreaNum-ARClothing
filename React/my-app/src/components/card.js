@@ -1,5 +1,5 @@
 import React from 'react';
-import Popup from ".//popup";
+import Popup from "./popup";
 import { useState } from 'react';
 import "./card.css";
 
