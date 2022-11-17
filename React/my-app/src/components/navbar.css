@@ -1,0 +1,86 @@
+/* ------------ Navbar ---------------*/
+.navbar {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #C68DD0;
+}
+
+/* ------------ Burger ---------------*/
+/* .burger-show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 40vw;
+    background: #E8C7DF;
+    display: none;
+    grid-template-rows: 20vh 40vh;
+} */
+
+.open-burger button {
+    background: none;
+    border: none;
+}
+
+.burger-logo {
+    z-index: 2;
+}
+
+.hamburger-react {
+    z-index: 2;
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.slide-out {
+    animation: slide-out 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+    from {
+        right: -40vw;
+    }
+    to {
+        right: 0;
+    }
+
+    ;
+}
+
+@keyframes slide-out {
+    from {
+        right: 0;
+    }
+    to {
+        right: -40vw;
+    }
+
+    ;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    grid-row: 2;
+    margin: 5vw;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
