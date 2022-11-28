@@ -1,0 +1,14 @@
+ARClothing/node_modules/
+ARClothing/.expo/
+ARClothing/dist/
+ARClothing/npm-debug.*
+ARClothing/*.jks
+ARClothing/*.p8
+ARClothing/*.p12
+ARClothing/*.key
+ARClothing/*.mobileprovision
+ARClothing/*.orig.*
+ARClothing/web-build/
+
+# macOS
+ARClothing/.DS_Store
