@@ -1,14 +1,14 @@
-ARClothing/node_modules/
-ARClothing/.expo/
-ARClothing/dist/
-ARClothing/npm-debug.*
-ARClothing/*.jks
-ARClothing/*.p8
-ARClothing/*.p12
-ARClothing/*.key
-ARClothing/*.mobileprovision
-ARClothing/*.orig.*
-ARClothing/web-build/
+ARClothing-app/node_modules/
+ARClothing-app/.expo/
+ARClothing-app/dist/
+ARClothing-app/npm-debug.*
+ARClothing-app/*.jks
+ARClothing-app/*.p8
+ARClothing-app/*.p12
+ARClothing-app/*.key
+ARClothing-app/*.mobileprovision
+ARClothing-app/*.orig.*
+ARClothing-app/web-build/
 
 # macOS
-ARClothing/.DS_Store
+ARClothing-app/.DS_Store
